@@ -45,7 +45,7 @@
                         <textInputTraits key="textInputTraits"/>
                     </textField>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhO-t4-nYF">
-                        <rect key="frame" x="20" y="271" width="280" height="35"/>
+                        <rect key="frame" x="20" y="271" width="280" height="34.333333333333314"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <state key="normal" title="Button"/>
@@ -76,6 +76,7 @@
                     <constraint firstItem="xhO-t4-nYF" firstAttribute="trailing" secondItem="mxZ-L7-N3B" secondAttribute="trailing" id="gU1-dM-N1u"/>
                     <constraint firstItem="7iE-gZ-7hm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="gcn-fZ-W9g"/>
                     <constraint firstItem="mxZ-L7-N3B" firstAttribute="trailing" secondItem="kaN-gJ-Gsr" secondAttribute="trailing" id="lZr-yp-pmI"/>
+                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="xhO-t4-nYF" secondAttribute="bottom" constant="195" id="oWW-ce-otF"/>
                     <constraint firstItem="7iE-gZ-7hm" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="rLS-fB-cp4"/>
                     <constraint firstItem="mxZ-L7-N3B" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="rbP-Y0-N5l"/>
                     <constraint firstItem="kaN-gJ-Gsr" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="tDx-OE-sKb"/>
