@@ -13,8 +13,8 @@ public class LoginViewController: UIViewController {
     
     public override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
+        self.tableView?.delegate = self
+        self.tableView?.dataSource = self
         let nib = UINib(nibName: "TableViewCell", bundle: nil)
         self.tableView?.register(nib, forCellReuseIdentifier: "cell")
 //        self.tableView?.showsVerticalScrollIndicator = false
