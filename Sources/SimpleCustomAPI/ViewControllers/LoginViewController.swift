@@ -13,8 +13,9 @@ public class LoginViewController: UIViewController {
     public static let storyboardVC = UIStoryboard(name: "main", bundle: Bundle.module).instantiateInitialViewController()!
     public override func viewDidLoad() {
         super.viewDidLoad()
-        let nib = UINib(nibName: "TableViewCell", bundle: Bundle.main)
+        let nib = UINib(nibName: "TableViewCell", bundle: Bundle.module)
         self.tableView?.register(nib, forCellReuseIdentifier: "TableViewCell")
+//        self.tableView?.register(UINib(nibName: "TableViewCell", bundle: Bundle(for: LoginViewController.self)), forCellReuseIdentifier: "TableViewCell")
 //        self.tableView?.showsVerticalScrollIndicator = false
     }
 }
