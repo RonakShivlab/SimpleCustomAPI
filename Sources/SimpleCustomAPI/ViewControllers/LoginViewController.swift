@@ -25,8 +25,7 @@ extension LoginViewController: UITableViewDelegate, UITableViewDataSource{
         return 1
     }
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = self.tableView.dequeueReusableCell(withIdentifier: "cell") as! TableViewCell
-        
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: "TableViewCell") as! TableViewCell
         return cell
     }
 
