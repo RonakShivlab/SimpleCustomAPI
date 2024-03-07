@@ -10,7 +10,7 @@ import UIKit
 public class LoginViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    
+    public static let storyboardVC = UIStoryboard(name: "main", bundle: Bundle.module).instantiateInitialViewController()!
     public override func viewDidLoad() {
         super.viewDidLoad()
         let nib = UINib(nibName: "TableViewCell", bundle: nil)
