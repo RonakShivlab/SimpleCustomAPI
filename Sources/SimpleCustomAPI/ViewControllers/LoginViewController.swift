@@ -15,7 +15,7 @@ public class LoginViewController: UIViewController {
         super.viewDidLoad()
         let nib = UINib(nibName: "TableViewCell", bundle: nil)
         self.tableView?.register(nib, forCellReuseIdentifier: "cell")
-        self.tableView?.showsVerticalScrollIndicator = false
+//        self.tableView?.showsVerticalScrollIndicator = false
     }
 }
 

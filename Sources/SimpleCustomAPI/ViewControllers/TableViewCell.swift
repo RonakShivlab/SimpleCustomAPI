@@ -17,7 +17,7 @@ struct loginReponse: Decodable{
     let username: String
 }
 
-class TableViewCell: UITableViewCell, UITextFieldDelegate {
+public class TableViewCell: UITableViewCell, UITextFieldDelegate {
 
     @IBOutlet weak var lblLogin: UILabel!
     @IBOutlet weak var tfEmailAddress: CustomTextField!
@@ -25,7 +25,7 @@ class TableViewCell: UITableViewCell, UITextFieldDelegate {
     @IBOutlet weak var btnLogin: UIButton!
     @IBOutlet weak var appLogo: UIImageView!
     private let apiClient = GenericAPIClient<loginReponse>(baseURL: URL(string: "https://dummyjson.com/auth/")!)
-    override func awakeFromNib() {
+    public override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         tfEmailAddress.delegate = self
@@ -33,7 +33,7 @@ class TableViewCell: UITableViewCell, UITextFieldDelegate {
 //        let loginRequest = loginRequest(username: "kminchelle", password: "0lelplR")
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
+    public override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
