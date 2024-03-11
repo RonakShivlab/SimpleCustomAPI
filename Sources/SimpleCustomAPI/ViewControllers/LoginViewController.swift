@@ -21,7 +21,7 @@ public class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var btnLogin: UIButton!
     public static let storyboardVC = UIStoryboard(name: "main", bundle: Bundle.module).instantiateInitialViewController()!
     private let apiClient = GenericAPIClient<loginReponse>(baseURL: URL(string: "https://dummyjson.com/auth/")!)
-    var delegate: LoginViewControllerDelegate?
+    weak var delegate: LoginViewControllerDelegate?
     public override func viewDidLoad() {
         super.viewDidLoad()
 //        let nib = UINib(nibName: "TableViewCell", bundle: Bundle.module)
