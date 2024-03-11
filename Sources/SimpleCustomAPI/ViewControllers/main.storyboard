@@ -38,23 +38,7 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rpH-BX-qUh">
                                 <rect key="frame" x="0.0" y="103" width="393" height="715"/>
-                                <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="oBL-pT-ZaM">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="715"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <connections>
-                                            <outlet property="dataSource" destination="Y6W-OH-hqX" id="W9Q-DE-Loc"/>
-                                            <outlet property="delegate" destination="Y6W-OH-hqX" id="2eb-9h-jSW"/>
-                                        </connections>
-                                    </tableView>
-                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="oBL-pT-ZaM" secondAttribute="trailing" id="73x-jm-XDD"/>
-                                    <constraint firstItem="oBL-pT-ZaM" firstAttribute="top" secondItem="rpH-BX-qUh" secondAttribute="top" id="YEP-Ud-fmG"/>
-                                    <constraint firstAttribute="bottom" secondItem="oBL-pT-ZaM" secondAttribute="bottom" id="xdH-T1-PY4"/>
-                                    <constraint firstItem="oBL-pT-ZaM" firstAttribute="leading" secondItem="rpH-BX-qUh" secondAttribute="leading" id="xdt-tT-hg8"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -70,9 +54,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8R0-M1-Z8o"/>
-                    <connections>
-                        <outlet property="tableView" destination="oBL-pT-ZaM" id="USf-gk-fhr"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
