@@ -7,12 +7,12 @@
 
 import UIKit
 
-struct loginRequest: Encodable{
+public struct loginRequest: Encodable{
     let username: String
     let password: String
 }
 
-struct loginReponse: Decodable{
+public struct loginReponse: Decodable{
     let token: String
     let username: String
 }

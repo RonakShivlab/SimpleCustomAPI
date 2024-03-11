@@ -7,6 +7,10 @@
 
 import UIKit
 
+public protocol LoginViewControllerDelegate: AnyObject{
+    func didRecieveApiResponse(response: loginReponse)
+}
+
 public class LoginViewController: UIViewController, UITextFieldDelegate {
 
 //    @IBOutlet weak var tableView: UITableView!
@@ -17,6 +21,7 @@ public class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var btnLogin: UIButton!
     public static let storyboardVC = UIStoryboard(name: "main", bundle: Bundle.module).instantiateInitialViewController()!
     private let apiClient = GenericAPIClient<loginReponse>(baseURL: URL(string: "https://dummyjson.com/auth/")!)
+    var delegate: LoginViewControllerDelegate?
     public override func viewDidLoad() {
         super.viewDidLoad()
 //        let nib = UINib(nibName: "TableViewCell", bundle: Bundle.module)
@@ -50,6 +55,7 @@ public class LoginViewController: UIViewController, UITextFieldDelegate {
             case .success(let response):
                 print("Token: \(response.token)")
                 print("Response: \(response)")
+                self.delegate?.didRecieveApiResponse(response: response)
             case .failure(let error):
                 print("error \(error)")
             }
