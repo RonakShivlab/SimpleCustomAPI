@@ -22,19 +22,9 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r7R-tu-jhT">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swift package" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kep-hs-7os">
-                                                <rect key="frame" x="142.66666666666666" y="11.666666666666671" width="107.66666666666666" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstItem="kep-hs-7os" firstAttribute="centerX" secondItem="r7R-tu-jhT" secondAttribute="centerX" id="88H-UY-1Dd"/>
                                             <constraint firstAttribute="height" constant="44" id="HlN-jG-jtk"/>
-                                            <constraint firstItem="kep-hs-7os" firstAttribute="centerY" secondItem="r7R-tu-jhT" secondAttribute="centerY" id="hOI-RK-Xd7"/>
                                         </constraints>
                                     </view>
                                 </subviews>
