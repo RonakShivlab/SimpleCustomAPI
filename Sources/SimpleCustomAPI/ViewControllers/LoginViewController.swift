@@ -14,23 +14,24 @@ public class LoginViewController: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
 //        let nib = UINib(nibName: "TableViewCell", bundle: Bundle.module)
-        let nib = Bundle.module.loadNibNamed("TableViewCell", owner: self)?.first as! UINib
-        self.tableView?.register(nib, forCellReuseIdentifier: "TableViewCell")
+//        let nib = Bundle.module.loadNibNamed("TableViewCell", owner: self)?.first as! UINib
+//        self.tableView?.register(nib, forCellReuseIdentifier: "TableViewCell")
 //        self.tableView?.register(UINib(nibName: "TableViewCell", bundle: Bundle(for: LoginViewController.self)), forCellReuseIdentifier: "TableViewCell")
 //        self.tableView?.showsVerticalScrollIndicator = false
+        print("Done")
     }
 }
 
 
-extension LoginViewController: UITableViewDelegate, UITableViewDataSource{
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = self.tableView.dequeueReusableCell(withIdentifier: "TableViewCell") as! TableViewCell
+//extension LoginViewController: UITableViewDelegate, UITableViewDataSource{
+//    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return 1
+//    }
+//    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+////        let cell = self.tableView.dequeueReusableCell(withIdentifier: "TableViewCell") as! TableViewCell
+////        return cell
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
 //        return cell
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
-        return cell
-    }
-
-}
+//    }
+//
+//}
