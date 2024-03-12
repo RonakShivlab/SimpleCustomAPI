@@ -31,6 +31,8 @@ public class LoginViewController: UIViewController, UITextFieldDelegate {
 //        self.tableView?.showsVerticalScrollIndicator = false
         self.tfEmailAddress.delegate = self
         self.tfPassword.delegate = self
+        self.tfEmailAddress.text = "kminchelle"
+        self.tfPassword.text = "0lelplR"
         print("Done")
     }
     
